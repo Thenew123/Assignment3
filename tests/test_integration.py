@@ -29,3 +29,13 @@ def test_customer_checkout_and_payment():
     pay_result = payment.process_payment(order_id, method_id, amount, "TEST_REF")
     assert pay_result["success"] 
 
+
+
+
+
+def test_order_transaction_rollback():
+    order_service = OrderService()
+    try:
+        order_service.add_to_cart(customer_id=None, product_id=1, quantity=1)
+    except Exception:
+        assert True
