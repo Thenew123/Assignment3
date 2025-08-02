@@ -64,8 +64,8 @@ def insert_sample_data():
         VALUES (?)
     """, [
         ("Cash",),
-        ("Momo",),
-        ("Bank Transfer",),
+        ("Card",),
+        ("EWallet",),
     ])
 
     # Insert Inventory for branch 1
@@ -78,6 +78,7 @@ def insert_sample_data():
         (1, 2, 80, date.today()),
         (1, 3, 150, date.today()),
     ])
+
 
     db.commit()
     print("✅ Sample data inserted.")
