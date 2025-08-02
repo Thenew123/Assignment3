@@ -1,3 +1,6 @@
+#Run the Database
+python -m Data.database_manager
+
 #Run the Terminal Application
 python main.py
 
@@ -16,3 +19,4 @@ Staff ID: 1
 //Branch Manager
 Email: khoa.manager@longchau.vn
 Staff ID: 2
+
