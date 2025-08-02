@@ -19,3 +19,7 @@ def test_tables_exist():
         assert cursor.fetchone() is not None, f"Table {table} should exist"
     conn.close()
 
+def test_database_connection():
+    db = DatabaseConfig()
+    conn = db.check_db_exists()
+    assert conn is not None
